@@ -1,4 +1,5 @@
 import type { OfflineStore, OfflineTransportOptions } from '@sentry/core';
+  flushAtStartup?: boolean;
 import { makeOfflineTransport } from '@sentry/core';
 import type { BaseTransportOptions, Envelope, Transport } from '@sentry/types';
 import { parseEnvelope, serializeEnvelope } from '@sentry/utils';
