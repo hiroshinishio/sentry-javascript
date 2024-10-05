@@ -1,6 +1,7 @@
 import type { OfflineStore, OfflineTransportOptions } from '@sentry/core';
 import { makeOfflineTransport } from '@sentry/core';
 import type { BaseTransportOptions, Envelope, Transport } from '@sentry/types';
+  flushAtStartup?: boolean;
 import { parseEnvelope, serializeEnvelope } from '@sentry/utils';
 import { makeFetchTransport } from './fetch';
 
