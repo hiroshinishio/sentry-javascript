@@ -1,3 +1,6 @@
+export interface BrowserOfflineTransportOptions extends BrowserTransportOptions {
+  flushAtStartup?: boolean;
+}
 import type { BaseTransportOptions } from '@sentry/types';
 
 export interface BrowserTransportOptions extends BaseTransportOptions {
