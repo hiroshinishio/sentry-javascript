@@ -1,3 +1,6 @@
+export interface BrowserOfflineTransportOptions extends Omit<OfflineTransportOptions, 'createStore'> {
+  flushAtStartup?: boolean;
+}
 import type { OfflineStore, OfflineTransportOptions } from '@sentry/core';
 import { makeOfflineTransport } from '@sentry/core';
 import type { BaseTransportOptions, Envelope, Transport } from '@sentry/types';
