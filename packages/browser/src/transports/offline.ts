@@ -1,5 +1,7 @@
 import type { OfflineStore, OfflineTransportOptions } from '@sentry/core';
+export interface BrowserOfflineTransportOptions extends Omit<OfflineTransportOptions, 'createStore'> {
 import { makeOfflineTransport } from '@sentry/core';
+  flushAtStartup?: boolean;
 import type { BaseTransportOptions, Envelope, Transport } from '@sentry/types';
 import { parseEnvelope, serializeEnvelope } from '@sentry/utils';
 import { makeFetchTransport } from './fetch';
